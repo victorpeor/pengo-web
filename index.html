@@ -40,6 +40,7 @@
         align-items: center;
         text-align: center;
         width: 100%;
+        max-width: 900px;
         margin-bottom: 2vh;
       }
 
@@ -49,19 +50,20 @@
         justify-content: center;
         gap: 1rem;
         width: 100%;
-        max-width: 100%;
       }
 
       .image,
       .forevergames {
-        max-width: 45%;
         height: auto;
-        flex: 1 1 150px;
+        max-height: 80px;
+        width: auto;
+        flex: 0 0 auto;
       }
 
       .text-wrapper {
         color: #99001e;
         font-size: 1.5rem;
+        font-weight: bold;
         margin-top: 1rem;
       }
 
@@ -117,11 +119,6 @@
       }
 
       @media (max-width: 600px) {
-        .image,
-        .forevergames {
-          max-width: 100%;
-        }
-
         .main {
           padding: 1rem;
         }
@@ -133,6 +130,11 @@
         .text-wrapper-2,
         .v-ctor-p-rez-ortega {
           font-size: 0.95rem;
+        }
+
+        .image,
+        .forevergames {
+          max-height: 60px;
         }
       }
     </style>
