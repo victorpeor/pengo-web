@@ -1,162 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
       .frame {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      position: relative;
-    }
-    
-    .frame .desktop {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 40px;
-      padding: 80px 160px;
-      position: relative;
-      align-self: stretch;
-      width: 100%;
-      flex: 0 0 auto;
-      background-color: #dbffff;
-    }
-    
-    .frame .header {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      position: relative;
-      flex: 0 0 auto;
-      margin-left: -127.50px;
-      margin-right: -127.50px;
-      background-color: transparent;
-    }
-    
-    .frame .logos {
-      display: flex;
-      width: 1395px;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-      position: relative;
-      flex: 0 0 auto;
-    }
-    
-    .frame .image {
-      position: relative;
-      width: 555.77px;
-      height: 160px;
-      object-fit: cover;
-    }
-    
-    .frame .forevergames {
-      position: relative;
-      width: 196.14px;
-      height: 160px;
-      object-fit: cover;
-    }
-    
-    .frame .text-wrapper {
-      position: relative;
-      width: fit-content;
-      font-family: "Futura-Bold-Regular", Helvetica;
-      font-weight: 400;
-      color: #99001e;
-      font-size: 32px;
-      letter-spacing: 0;
-      line-height: normal;
-      white-space: nowrap;
-    }
-    
-    .frame .main {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 40px;
-      padding: 40px 32px;
-      position: relative;
-      align-self: stretch;
-      width: 100%;
-      flex: 0 0 auto;
-      background-color: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0px 2px 12.3px #1500642b;
-    }
-    
-    .frame .section {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 16px;
-      position: relative;
-      align-self: stretch;
-      width: 100%;
-      flex: 0 0 auto;
-    }
-    
-    .frame .div {
-      position: relative;
-      width: fit-content;
-      margin-top: -1.00px;
-      font-family: "Futura-Bold-Regular", Helvetica;
-      font-weight: 400;
-      color: #99001e;
-      font-size: 24px;
-      letter-spacing: 0;
-      line-height: normal;
-      white-space: nowrap;
-    }
-    
-    .frame .text-wrapper-2 {
-      position: relative;
-      align-self: stretch;
-      font-family: "Futura Std-Book", Helvetica;
-      font-weight: 400;
-      color: #000000;
-      font-size: 24px;
-      letter-spacing: 0;
-      line-height: normal;
-    }
-    
-    .frame .div-2 {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      position: relative;
-      align-self: stretch;
-      width: 100%;
-      flex: 0 0 auto;
-    }
-    
-    .frame .v-ctor-p-rez-ortega {
-      position: relative;
-      flex: 1;
-      margin-top: -1.00px;
-      font-family: "Futura Std-Book", Helvetica;
-      font-weight: 400;
-      color: #000000;
-      font-size: 24px;
-      letter-spacing: 0;
-      line-height: normal;
-    }
-    
-    .frame .img {
-      position: relative;
-      width: 141.58px;
-      height: 135.61px;
-    }
-    
-    .frame .video-placeholder {
-      position: relative;
-      align-self: stretch;
-      width: 100%;
-      height: 300px;
-      background-color: #d9d9d9;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+      }
+
+      .desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3%;
+        padding: 5% 10%;
+        width: 100%;
+        background-color: #dbffff;
+      }
+
+      .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .logos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        width: 100%;
+      }
+
+      .image,
+      .forevergames {
+        height: auto;
+        max-height: 160px;
+        object-fit: contain;
+      }
+
+      .image {
+        max-width: 40%;
+      }
+
+      .forevergames {
+        max-width: 15%;
+      }
+
+      .text-wrapper {
+        font-weight: 700;
+        color: #99001e;
+        font-size: 2em;
+        white-space: nowrap;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding: 3% 5%;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0px 2px 12.3px #1500642b;
+      }
+
+      .section {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 100%;
+      }
+
+      .div {
+        font-weight: 700;
+        color: #99001e;
+        font-size: 1.5em;
+      }
+
+      .text-wrapper-2,
+      .v-ctor-p-rez-ortega {
+        font-weight: 400;
+        color: #000;
+        font-size: 1.2em;
+        line-height: 1.5em;
+      }
+
+      .div-2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 1em;
+      }
+
+      .img {
+        max-width: 150px;
+        height: auto;
+      }
+
+      .video-placeholder {
+        width: 100%;
+        height: 300px;
+        background-color: #d9d9d9;
+        border-radius: 8px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .text-wrapper {
+          font-size: 1.5em;
+        }
+
+        .main {
+          padding: 5%;
+        }
+
+        .div,
+        .text-wrapper-2,
+        .v-ctor-p-rez-ortega {
+          font-size: 1em;
+        }
+
+        .logos {
+          flex-direction: column;
+        }
+
+        .image,
+        .forevergames {
+          max-width: 80%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -164,7 +149,8 @@
       <div class="desktop">
         <header class="header">
           <div class="logos">
-            <img class="image" src="img/image-1.png" /> <img class="forevergames" src="img/image.png" />
+            <img class="image" src="img/image-1.png" />
+            <img class="forevergames" src="img/image.png" />
           </div>
           <p class="text-wrapper">Recreation of the 1982 arcade classic</p>
         </header>
@@ -181,8 +167,8 @@
             <div class="div">Team</div>
             <div class="div-2">
               <p class="v-ctor-p-rez-ortega">
-                Víctor Pérez Ortega: implementation of sound, enemies, map generation,e tc<br />Mario Torrents
-                Rodríguez: coding, design
+                Víctor Pérez Ortega: implementation of sound, enemies, map generation, etc.<br />
+                Mario Torrents Rodríguez: coding, design
               </p>
               <img class="img" src="img/forevergames-1.png" />
             </div>
