@@ -1,107 +1,202 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <title>Pengo – Forever Games</title>
-  <style>
-    body {
-      background: #f4faff;
-      font-family: sans-serif;
-      color: #222;
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <style>
+      .frame {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
     }
-
-    h1, h2 {
-      text-align: center;
-      color: #0050b3;
+    
+    .frame .desktop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      padding: 80px 160px;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+      background-color: #dbffff;
     }
-
-    section {
-      margin: 40px 0;
+    
+    .frame .header {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+      flex: 0 0 auto;
+      margin-left: -127.50px;
+      margin-right: -127.50px;
+      background-color: transparent;
     }
-
-    img.logo {
-      display: block;
-      margin: 20px auto;
-      max-width: 300px;
+    
+    .frame .logos {
+      display: flex;
+      width: 1395px;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      position: relative;
+      flex: 0 0 auto;
     }
-
-    iframe {
-      display: block;
-      margin: 0 auto;
-      border: none;
+    
+    .frame .image {
+      position: relative;
+      width: 555.77px;
+      height: 160px;
+      object-fit: cover;
     }
-
-    a.button {
-      display: inline-block;
-      background-color: #0050b3;
-      color: white;
-      padding: 12px 20px;
-      margin-top: 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
+    
+    .frame .forevergames {
+      position: relative;
+      width: 196.14px;
+      height: 160px;
+      object-fit: cover;
     }
-
-    a.button:hover {
-      background-color: #003974;
+    
+    .frame .text-wrapper {
+      position: relative;
+      width: fit-content;
+      font-family: "Futura-Bold-Regular", Helvetica;
+      font-weight: 400;
+      color: #99001e;
+      font-size: 32px;
+      letter-spacing: 0;
+      line-height: normal;
+      white-space: nowrap;
     }
-
-    .center {
-      text-align: center;
+    
+    .frame .main {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 40px 32px;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0px 2px 12.3px #1500642b;
     }
-
-    .box {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    
+    .frame .section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
     }
-
-  </style>
-</head>
-<body>
-
-  <h1>Pengo – Forever Games</h1>
-  <h2>Recreación del clásico arcade de 1982</h2>
-
-  <img src="forevergames.png" alt="Logo Forever Games" class="logo">
-
-  <div class="box">
-    <section>
-      <h3>🎮 Descripción del Juego</h3>
-      <p>Este proyecto es una reinterpretación del juego arcade <strong>Pengo</strong> (Sega, 1982), donde el jugador empuja bloques de hielo para derrotar enemigos y sobrevivir. El juego ha sido desarrollado en C++ usando la librería Raylib como proyecto académico de la UPC.</p>
-    </section>
-
-    <section>
-      <h3>👥 Equipo</h3>
-      <p><strong>Víctor Pérez Ortega</strong> – Programación y diseño<br>
-      <strong>Mario Torrents Rodríguez</strong> – Programación y diseño<br>
-      <strong>Vladimir Solosev</strong> – Programación</p>
-    </section>
-
-    <section>
-      <h3>🛠️ Contribuciones</h3>
-      <ul>
-        <li><strong>Víctor:</strong> lógica del jugador, físicas, menú principal.</li>
-        <li><strong>Mario:</strong> IA enemigos, diseño de niveles, animaciones.</li>
-        <li><strong>Vladimir:</strong> optimización del código y depuración.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>🎥 Vídeo de Gameplay</h3>
-      <p><em>El video será añadido próximamente...</em></p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_ID" allowfullscreen></iframe>
-    </section>
-
-    <section class="center">
-      <h3>📦 Descargar</h3>
-      <a class="button" href="https://github.com/MarioTorrentsRodriguez/Pengo/releases/latest" target="_blank">Descargar última versión</a>
-    </section>
-  </div>
-
-</body>
+    
+    .frame .div {
+      position: relative;
+      width: fit-content;
+      margin-top: -1.00px;
+      font-family: "Futura-Bold-Regular", Helvetica;
+      font-weight: 400;
+      color: #99001e;
+      font-size: 24px;
+      letter-spacing: 0;
+      line-height: normal;
+      white-space: nowrap;
+    }
+    
+    .frame .text-wrapper-2 {
+      position: relative;
+      align-self: stretch;
+      font-family: "Futura Std-Book", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 24px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+    .frame .div-2 {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    
+    .frame .v-ctor-p-rez-ortega {
+      position: relative;
+      flex: 1;
+      margin-top: -1.00px;
+      font-family: "Futura Std-Book", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 24px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+    .frame .img {
+      position: relative;
+      width: 141.58px;
+      height: 135.61px;
+    }
+    
+    .frame .video-placeholder {
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      height: 300px;
+      background-color: #d9d9d9;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="desktop">
+        <header class="header">
+          <div class="logos">
+            <img class="image" src="img/image-1.png" /> <img class="forevergames" src="img/image.png" />
+          </div>
+          <p class="text-wrapper">Recreation of the 1982 arcade classic</p>
+        </header>
+        <div class="main">
+          <div class="section">
+            <div class="div">Game Description</div>
+            <p class="text-wrapper-2">
+              Este proyecto es una reinterpretación del juego arcade Pengo (Sega, 1982), donde el jugador empuja bloques
+              de hielo para derrotar enemigos y sobrevivir. El juego ha sido desarrollado en C++ usando la librería
+              Raylib como proyecto académico de la UPC.
+            </p>
+          </div>
+          <div class="section">
+            <div class="div">Team</div>
+            <div class="div-2">
+              <p class="v-ctor-p-rez-ortega">
+                Víctor Pérez Ortega: implementation of sound, enemies, map generation,e tc<br />Mario Torrents
+                Rodríguez: coding, design
+              </p>
+              <img class="img" src="img/forevergames-1.png" />
+            </div>
+          </div>
+          <div class="section">
+            <div class="div">Gameplay video</div>
+            <div class="video-placeholder"></div>
+          </div>
+          <div class="section">
+            <div class="div">Download link</div>
+            <div class="text-wrapper-2">insert link here</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
